@@ -45,11 +45,6 @@ function App() {
             __html: DOMPurify.sanitize(marked.parse(editorText)),
           }}
         ></div>
-        {console.log(
-          marked.parse(
-            editorText.replace(/^[\u200B\u200C\u200D\u200E\u200F\uFEFF]/, "")
-          )
-        )}
       </div>
     </div>
   );
